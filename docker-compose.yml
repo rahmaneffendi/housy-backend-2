@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+ backend:
+   build: .
+   container_name: be
+   image: arahmane/wayshub-be:stable
+   stdin_open: true
+   ports:
+    - 5555:5000
